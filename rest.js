@@ -37,5 +37,5 @@ app.post("/products", (req, res) => {
     products.push(product);
     res.send(product);
 });
-
+//check
 app.listen(3001);
