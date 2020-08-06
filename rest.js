@@ -53,7 +53,7 @@ app.delete("/products/:id", (req, res) => {
     products.forEach((product, i) => {
         if (product.id == req.params.id) {
             products.splice(i, 1);
-            res.send(`${req.params.id}  ${req.params.name}  deleted`);
+            res.send(`${req.params.id} deleted`);
         }
     });
 });
