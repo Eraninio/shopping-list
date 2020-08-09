@@ -5,7 +5,6 @@ const addButton = document.querySelector('#addButton');
 const para = document.querySelector('p');
 const list = document.querySelector('ol');
 const baseUrl = "http://localhost:3001/";
-
 async function func() {
     const { data } = await axios.get(baseUrl + "products");
     for (let i = 0; i < data.length; i++) {
@@ -44,7 +43,7 @@ addButton.addEventListener('click', () => {
     addField.value = "";
     axios.post(`http://localhost:3001/products`, {
     name: `${product}`
-    })
+    })            
     .then (
         product =>  {
             deleteButton.onclick = () => {

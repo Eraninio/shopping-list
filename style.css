@@ -1,0 +1,35 @@
+body {
+    background-color: azure;
+    display: grid;
+    height: 800px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    justify-content:center;
+    align-content: flex-start;
+    row-gap: 10px;  
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Helvetica', arial, sans-serif;
+
+}
+
+#sectionView {
+    text-align: center;
+    position: relative;
+}
+
+ol {
+    text-align: center;
+    position: relative;
+}
+
+#addField {
+    border: none;
+    display: block;
+    width: 98.4%;
+    line-height: 1.5;
+    padding: 8px 0 8px 10px;
+    border-bottom: 1px solid #cfcbcc;
+    outline:0;
+}
