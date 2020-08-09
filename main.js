@@ -11,6 +11,7 @@ async function func() {
     for (let i = 0; i < data.length; i++) {
         const product = data[i].name;
         const li = document.createElement('li');
+        li.className = "li";
         li.id = i + 1;
         li.innerHTML = product;
         let deleteButton = document.createElement("button");
@@ -52,30 +53,6 @@ addButton.addEventListener('click', () => {
         }
     });
 });
-
-function searchId() {
-    var textSearch = searchField.value;
-    let filter = textSearch.toUpperCase();
-    
-}
-
-
-
-
-// function addFunc() {
-//     if (addField.value.length > 0) { 
-//         const product = addField.value;
-//         const li = document.createElement('li');
-//         li.innerHTML = product;
-//         const deleteButton = document.createElement("button");
-//         deleteButton.className = "deleteButton";
-//         deleteButton.innerHTML = "Delete";
-//         list.prepend(li);
-//         li.append(deleteButton);
-//     }
-// }
-
-
 
 
 
