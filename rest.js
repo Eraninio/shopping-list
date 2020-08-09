@@ -25,7 +25,9 @@ app.get("/products", (req, res) => {
 app.post("/products", (req, res) => {
     console.log(req.body);
     let product = {};
-    product.id = products[products.length - 1].id + 1;
+    // product.id = products[products.length - 1].id + 1;
+    product.id = (products.length != 0) ? products[products.length -1].id + 1 : 1 ;
+    console.log(products.length);
     product.name = req.body.name;
     product.time = moment().format("lll");
     products.push(product);

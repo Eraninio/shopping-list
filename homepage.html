@@ -6,20 +6,22 @@
     <title>Shopping List</title>
 </head>
 <body>
-    <h1>My Shopping List</h1>
-    <input id="search" />
-    <button id="searchButon">Add</button>
-    <div id="results">
-    </div>
+  <h1> Shopping List</h1>
+  <div>
+    <input type="text" id="addField" placeholder="Add some products.." />
+    <button id="addButton">Add</button>
+  </div>
+  <div>
+    <input type="text" id="searchField" placeholder="Search some products..">
+    <button id="searchButton">Search by Id</button>
+  </div>
+  <div id="results">
     <p>
-  
+        <ol id="names">
+        </ol>
     </p>
-    <div id="types">
-  
-    </div>
-    <ol id="names">
-    </ol>
-  
-  
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- todo later: use a local copy installed via npm -->
+  <script src="./main.js"></script>  <!-- todo: change to type:module -->
 </body>
 </html>
